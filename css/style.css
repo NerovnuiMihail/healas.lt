@@ -291,18 +291,18 @@ h1 {
   display: flex;
   position: relative;
   height: 833px;
-  background: url(../../../images/home/first-bg.png);
+  background: url(./../../images/home/first-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top; }
   .home::after {
     position: absolute;
-    content: url(../../../images/home/first-x.png);
+    content: url(./../../images/home/first-x.png);
     top: 291px;
     left: 0; }
   .home::before {
     position: absolute;
-    content: url(../../../images/home/second-x.png);
+    content: url(./../../images/home/second-x.png);
     left: 371px;
     bottom: 60px; }
   .home__description {
@@ -314,7 +314,7 @@ h1 {
     .home__description h1 {
       position: relative; }
       .home__description h1::after {
-        content: url(../../../images/home/arrow.png);
+        content: url(./../../images/home/arrow.png);
         position: absolute;
         top: -2px;
         left: 41%; }
@@ -326,7 +326,7 @@ h1 {
     .home__description .text {
       position: relative; }
       .home__description .text::after {
-        content: url(../../../images/home/text-bg.png);
+        content: url(./../../images/home/text-bg.png);
         position: absolute;
         z-index: -1;
         left: 0;
@@ -339,7 +339,7 @@ h1 {
     margin-left: 32px;
     position: relative; }
     .home__img::after {
-      content: url(../../../images/home/dots.png);
+      content: url(./../../images/home/dots.png);
       position: absolute;
       bottom: 335px;
       right: -150px; }
