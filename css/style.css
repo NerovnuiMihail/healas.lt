@@ -547,7 +547,7 @@ h1 {
   position: relative;
   display: flex; }
   .about-vr::after {
-    content: url(../../images/aboutvr/vr-game.png);
+    content: url(./../images/aboutvr/vr-game.png);
     position: absolute;
     right: 0px;
     top: -207px; }
@@ -557,7 +557,7 @@ h1 {
     margin-top: 90px;
     margin-left: 82px; }
     .about-vr__img::after {
-      content: url(../../images/aboutvr/bg-img.png);
+      content: url(./../images/aboutvr/bg-img.png);
       position: absolute;
       top: -50px;
       left: -85px;
@@ -568,7 +568,7 @@ h1 {
     margin-top: 167px;
     margin-left: 76px; }
     .about-vr__description::before {
-      content: url(../../images/aboutvr/VR.png);
+      content: url(./../images/aboutvr/VR.png);
       position: absolute;
       bottom: 0px;
       right: 23px; }
@@ -583,7 +583,7 @@ h1 {
       max-width: 518px;
       position: relative; }
       .about-vr__description .text::after {
-        content: url(../../images/aboutvr/smoke-1.png);
+        content: url(./../images/aboutvr/smoke-1.png);
         position: absolute;
         z-index: -1;
         top: -370px;
@@ -594,7 +594,7 @@ h1 {
       width: 207px;
       position: relative; }
       .about-vr__description .button::after {
-        content: url(../../images/aboutvr/arrow.png);
+        content: url(./../images/aboutvr/arrow.png);
         position: absolute;
         top: -18px;
         right: -98px; }
@@ -650,7 +650,7 @@ h1 {
   margin-inline: auto;
   display: flex;
   position: relative;
-  background: url(../../images/aboutxbox/about-xbox-pc-bg.png); }
+  background: url(./../images/aboutxbox/about-xbox-pc-bg.png); }
   .about-xbox__img {
     margin-top: 30px;
     margin-left: 95px; }
@@ -672,7 +672,7 @@ h1 {
       margin-left: 3px;
       width: 207px; }
       .about-xbox__description .button::after {
-        content: url(../../images/aboutxbox/arrow.png);
+        content: url(./../images/aboutxbox/arrow.png);
         position: absolute;
         bottom: 206px;
         right: 73px; }
@@ -721,7 +721,7 @@ h1 {
   margin-inline: auto;
   position: relative; }
   .pricing::after {
-    content: url(../../images/prices/wawes.png);
+    content: url(./../images/prices/wawes.png);
     position: absolute;
     z-index: -1;
     top: -130px;
@@ -783,7 +783,7 @@ h1 {
         position: relative; }
         .pricing__card ul li::after {
           position: absolute;
-          content: url(../../images/prices/check-list-bl.png);
+          content: url(./../images/prices/check-list-bl.png);
           left: 2px;
           bottom: 0; }
     .pricing__card .button {
@@ -795,7 +795,7 @@ h1 {
     position: relative; }
     .pricing__card--active::after {
       position: absolute;
-      content: url(../../images/prices/card-active-element.png);
+      content: url(./../images/prices/card-active-element.png);
       bottom: -9px;
       right: 170px;
       z-index: 1; }
@@ -806,7 +806,7 @@ h1 {
       margin-bottom: 59px;
       color: #fff; }
       .pricing__card--active ul li::after {
-        content: url(../../images/prices/check-list-wh.png);
+        content: url(./../images/prices/check-list-wh.png);
         left: 2px;
         bottom: 0; }
   .pricing__card-checkbox {
