@@ -55,7 +55,8 @@
         gap: 30px;
 
         &__description {
-            margin-left: 0;
+            margin-left: 80px;
+            margin-top: 80px;
         }
 
         &__img {
@@ -73,6 +74,7 @@
 
         &__description {
             margin-top: 60px;
+            margin-left: 0;
 
             .button {
                 &::after {

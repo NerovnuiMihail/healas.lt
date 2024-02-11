@@ -3,7 +3,7 @@
     max-width: 1167px;
     padding-top: 10px;
     position: absolute;
-    z-index: 2;
+    z-index: 20;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
@@ -76,6 +76,10 @@
             width: 180px;
         }
     }
+}
+
+.hidden-logo {
+    opacity: 0;
 }
 
 @include desktop {
