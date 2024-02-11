@@ -1,0 +1,104 @@
+.header {
+    width: 100%;
+    max-width: 1167px;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        nav {
+            margin-right: 55px;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                line-height: 1.24;
+                position: relative;
+
+                &:nth-child(1) {
+                    margin-right: 53px;
+                }
+                &:nth-child(2) {
+                    margin-right: 45px;
+                }
+                &:nth-child(3) {
+                    margin-right: 42px;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 49%;
+                    height: 3px;
+                    width: 0;
+                    transition: width .7s;
+                    background: #4499d9 ;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 50%;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 49%;
+                    height: 3px;
+                    width: 0;
+                    transition: width .7s;
+                    background: #4499d9 ;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        button {
+            width: 180px;
+        }
+    }
+}
+
+@include desktop {
+    .header {
+        max-width: 95%;
+
+        &__logo {
+            width: 217px;
+        }
+    }
+}
+
+@include tablet {
+    .header {
+        .button {
+            height: 40px;
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        max-width: 90%;
+        align-items: center;
+    }
+}

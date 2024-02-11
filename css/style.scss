@@ -1,0 +1,18 @@
+@import "normalize",
+        // "fonts",
+        "vars",
+        "media",
+        "utils",
+        "globals";
+
+
+@import "blocks/header",
+        "blocks/home",
+        "blocks/button",
+        "blocks/card",
+        "blocks/about-vr",
+        "blocks/about-xbox",
+        "blocks/pricing",
+        "blocks/checkbox",
+        "blocks/footer",
+        "blocks/burger-menu";

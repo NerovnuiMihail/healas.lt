@@ -1,0 +1,162 @@
+.about-vr {
+    width: 100%;
+    max-width: 1440px;
+    height: 769px;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+
+    &::after {
+        content: url(../../images/aboutvr/vr-game.png);
+        position: absolute;
+        right: 0px;
+        top: -207px;
+    }
+
+    &__img {
+        order: 1;
+        position: relative;
+        margin-top: 90px;
+        margin-left: 82px;
+
+        &::after {
+            content: url(../../images/aboutvr/bg-img.png);
+            position: absolute;
+            top: -50px;
+            left: -85px;
+            z-index: -1;
+        
+        }
+    }
+
+    &__description {
+        order: 2;
+        position: relative;
+        margin-top: 167px;
+        margin-left: 76px;
+
+        &::before {
+            content: url(../../images/aboutvr/VR.png);
+            position: absolute;
+            bottom: 0px;
+            right: 23px;
+        }
+
+        .title {
+            margin-top: 31px;
+
+            span {
+                word-spacing: -10px;
+                letter-spacing: -3px;
+                font-weight: 500;
+            }
+        }
+
+        .text {
+            margin-top: 16px;
+            max-width: 518px;
+            position: relative;
+
+            &::after {
+                content: url(../../images/aboutvr/smoke-1.png);
+                position: absolute;
+                z-index: -1;
+                top: -370px;
+                right: -150px;
+            }
+        }
+
+        .button {
+            margin-top: 29px;
+            margin-left: 2px;
+            width: 207px;
+            position: relative;
+
+            &::after {
+                content: url(../../images/aboutvr/arrow.png);
+                position: absolute;
+                top: -18px;
+                right: -98px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .about-vr {
+        gap: 20px;
+        justify-content: space-around;
+
+        &__description {
+            margin-left: 0;
+            padding-left: 10px;
+            padding-right: 15px;
+
+            .text {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &__img {
+            margin-left: 0;
+        }
+    }
+}
+
+@include tablet {
+    .about-vr {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+
+        &__description {
+            margin-top: 60px;
+
+            .title {
+                margin-top: 15px;
+            }
+
+            .text {
+                margin-top: 5px;
+            }
+        }
+
+        &__img {
+            order: 2;
+            margin-top: 10px;
+            min-width: 50%;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .about-vr {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &__description {
+            padding: 0;
+
+            .title {
+                font-size: 0px;
+                line-height: normal;
+
+                &__span {
+                    letter-spacing: normal;
+                    font-size: 48px;
+                }
+            }
+
+            .text {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.button {
+    cursor: pointer;
+    border: none;
+    height: $button-height;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: $background-btn;
+    border-radius: $border-radius-extra;
+    transition: box-shadow .8s;
+
+    @include hover {
+        box-shadow: 1px 1px 3px 1px #EB8382, -1px -1px 3px 1px #EB8382;
+    }
+}

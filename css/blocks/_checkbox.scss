@@ -1,0 +1,27 @@
+.checkbox {
+    width: 45px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #FAC7B5;
+    border-radius: 50%;
+    
+
+
+    &__wrapper {
+        border-radius: 50%;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background: #EB8382;
+
+        &::after {
+            content: url(../../images/prices/check-active.png);
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

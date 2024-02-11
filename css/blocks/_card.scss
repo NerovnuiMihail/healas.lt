@@ -1,0 +1,79 @@
+.card {
+    cursor: pointer;
+    width: 211px;
+    height: 95px;
+    position: relative;
+    box-shadow: 0 10px 20px 0 rgba(235, 131, 130, 0.4);
+    border-radius: $border-radius-small;
+    transition: .6s;
+
+    &:hover {
+        box-shadow: 0 10px 40px 0 rgba(235, 131, 130, 0.7);
+    }
+
+    &__wrapper {
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        background: #fff;
+        box-shadow: 0 10px 20px 0 rgba(235, 131, 130, 0.4);
+        border-radius: $border-radius-small;
+        opacity: 0.4;
+        transition: .6s;
+
+        &:hover {
+            box-shadow: 0 10px 40px 0 rgba(235, 131, 130, 0.7);
+        }
+    }
+
+    &__description {
+        position: absolute;
+        z-index: 2;
+        max-width: 97px;
+    }
+
+    &__title {
+        font-size: 10px;
+        line-height: 12px; 
+    }
+
+    &__price {
+        margin-top: 9px;
+        margin-bottom: 4.2px;
+        font-size: 10px;
+        line-height: 10px; 
+        letter-spacing: -0.4px;
+        color: $accent-title-color;
+    }
+
+    &__review {
+        font-size: 8px;
+        line-height: 12px; 
+        display: flex;
+        align-items: center;
+        gap: 5.7px;
+    }
+
+    &__stars {
+        display: flex;
+        gap: 3.1px;
+
+        span {
+            display: block;
+            width: 8px;
+            height: 8px;
+            background: url(../../images/icon/star.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__text {
+        letter-spacing: -0.3px;
+    }
+
+    &__img {
+        z-index: 2;
+        position: absolute;
+    }
+}

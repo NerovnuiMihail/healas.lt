@@ -1,0 +1,243 @@
+.pricing {
+    padding: 50px 0px 73px;
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    position: relative;
+
+    &::after {
+        content: url(../../images/prices/wawes.png);
+        position: absolute;
+        z-index: -1;
+        top: -130px;
+        left: 0px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1 {
+            margin-left: -10px;
+        }
+
+        .title {
+            margin-top: 24px;
+            margin-left: -10px;
+
+            span {
+                word-spacing: -7px;
+                letter-spacing: -3px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__cards {
+        margin-top: 50px;
+        margin-left: 142px;
+        height: 606px;
+        display: flex;
+        align-items: flex-start;
+
+        article {
+            &:first-child {
+                margin-right: 42px;
+            }
+            &:last-child {
+                margin-left: 39px;
+            }
+        }
+    }
+
+    &__card {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 360px;
+        padding: 41px 46px 47px;
+        display: flex;
+        flex-direction: column;
+        border-radius: $border-radius-extra;
+        background: $background-plan-card;
+        box-shadow: 0 20px 50px 0 rgba(132, 148, 205, 0.08);
+        transition: all 0.3s;
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            margin-bottom: 31px;
+            color: $accent-title-color;
+
+            span {
+                &:first-child {
+                    font-size: 27px;
+                }
+                &:last-child {
+                    font-size: 18px;
+                }
+            }
+
+            .big {
+                letter-spacing: -2px;
+                font-size: 50px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            margin-bottom: 53px;
+
+            li {
+                padding-left: 29px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: url(../../images/prices/check-list-bl.png);
+                    left: 2px;
+                    bottom: 0;
+                }
+            }
+        }
+
+        .button {
+            z-index: 2;
+        }
+    }
+
+    &__card--active {
+        margin-top: 0;
+        padding: 55px 46px 65px;
+        background: $accent-background-plan-card;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url(../../images/prices/card-active-element.png);
+            bottom: -9px;
+            right: 170px;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: $light-color;
+        }
+
+        ul {
+            margin-bottom: 59px;
+            color: $light-color;
+
+            li {
+                &::after {
+                    content: url(../../images/prices/check-list-wh.png);
+                    left: 2px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__card-checkbox {
+        position: absolute;
+        top: 25px;
+        right: 24px;
+    }
+}
+
+.pricing__card.pricing__card--active  .pricing__card-checkbox {
+    display: flex;
+}
+
+@media (max-width: 1439px) {
+    .pricing {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &::after {
+            display: none;
+        }
+
+        &__cards {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            article {
+                &:first-child {
+                    margin: 0;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__card {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .pricing {
+        height: auto;
+    }
+
+    .pricing__cards {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing {
+
+        .title {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 0px;
+            line-height: normal;
+
+            &__span {
+                letter-spacing: normal;
+                font-size: 48px;
+            }
+        }
+
+        &__card {
+            padding: 20px;
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .pricing__card {
+        width: 100%;
+    }
+}

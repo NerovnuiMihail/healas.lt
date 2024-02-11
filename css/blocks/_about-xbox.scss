@@ -1,0 +1,111 @@
+.about-xbox {
+    width: 100%;
+    max-width: 1440px;
+    height: 688px;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+    background: url(../../images/aboutxbox/about-xbox-pc-bg.png);
+
+    &__img {
+        margin-top: 30px;
+        margin-left: 95px;
+    }
+
+    &__description {
+        margin-top: 116px;
+        margin-left: 140px;
+        width: 529px;
+        position: relative;
+
+        .title {
+            margin-top: 30px;
+
+            span {
+                word-spacing: -10px;
+                letter-spacing: -3px;
+                font-weight: 500;
+            }
+        }
+
+        .text {
+            margin-top: 18px;
+        }
+
+        .button {
+            margin-top: 30px;
+            margin-left: 3px;
+            width: 207px;
+
+            &::after {
+                content: url(../../images/aboutxbox/arrow.png);
+                position: absolute;
+                bottom: 206px;
+                right: 73px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .about-xbox {
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 30px;
+
+        &__description {
+            margin-left: 0;
+        }
+
+        &__img {
+            margin-left: 0;
+        }
+    }
+}
+
+@include tablet {
+    .about-xbox {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+
+        &__description {
+            margin-top: 60px;
+
+            .button {
+                &::after {
+                    bottom: 25px;
+                    left: 250px;
+                }
+            }
+        }
+
+        &__img {
+            margin-top: 0;
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .about-xbox {
+        
+        &__description {
+            width: 100%;
+
+            .title {
+                margin-top: 15px;
+                margin-bottom: 10px;
+                font-size: 0px;
+                line-height: normal;
+
+                &__span {
+                    letter-spacing: normal;
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
