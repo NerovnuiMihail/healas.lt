@@ -212,7 +212,7 @@ textarea,
 svg * {
   transition-duration: 0.2s; }
 
-h1 {
+h1, h2 {
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -760,7 +760,7 @@ h1 {
     background: #fbdacf;
     box-shadow: 0 20px 50px 0 rgba(132, 148, 205, 0.08);
     transition: all 0.3s; }
-    .pricing__card h1 {
+    .pricing__card h2 {
       font-size: 32px;
       margin-bottom: 35px; }
     .pricing__card p {
@@ -799,7 +799,7 @@ h1 {
       bottom: -9px;
       right: 170px;
       z-index: 1; }
-    .pricing__card--active h1 {
+    .pricing__card--active h2 {
       font-size: 28px;
       color: #fff; }
     .pricing__card--active ul {
@@ -856,7 +856,7 @@ h1 {
       font-size: 48px; }
   .pricing__card {
     padding: 20px; }
-    .pricing__card h1 {
+    .pricing__card h2 {
       font-size: 24px;
       margin-bottom: 10px; }
     .pricing__card p {

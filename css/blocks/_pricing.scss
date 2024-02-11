@@ -63,7 +63,7 @@
         box-shadow: 0 20px 50px 0 rgba(132, 148, 205, 0.08);
         transition: all 0.3s;
         
-        h1 {
+        h2 {
             font-size: 32px;
             margin-bottom: 35px;
         }
@@ -125,7 +125,7 @@
             z-index: 1;
         }
 
-        h1 {
+        h2 {
             font-size: 28px;
             color: $light-color;
         }
@@ -220,7 +220,7 @@
         &__card {
             padding: 20px;
             
-            h1 {
+            h2 {
                 font-size: 24px;
                 margin-bottom: 10px;
             }
