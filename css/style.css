@@ -881,7 +881,7 @@ h1 {
     height: 32px;
     background: #EB8382; }
     .checkbox__wrapper::after {
-      content: url(../../images/prices/check-active.png);
+      content: url(./../images/prices/check-active.png);
       position: absolute;
       top: 60%;
       left: 50%;
