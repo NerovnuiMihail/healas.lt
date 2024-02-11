@@ -898,7 +898,11 @@ h1, h2 {
         width: 40px;
         height: 40px;
         box-shadow: -1px -1px 8px 0 rgba(255, 255, 255, 0.08);
-        background: #fcd8cb; }
+        background: #fcd8cb;
+        transition: background-color 0.7s; }
+        .footer__wrapper ul li a:hover {
+          background: #ffffff;
+          border: 1px solid #fcd8cb; }
   .footer__logo {
     width: 238px;
     height: 65px;

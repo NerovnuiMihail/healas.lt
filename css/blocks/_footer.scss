@@ -34,6 +34,12 @@
                     height: 40px;
                     box-shadow: -1px -1px 8px 0 rgba(255, 255, 255, 0.08);
                     background: #fcd8cb;
+                    transition: background-color 0.7s;
+
+                    &:hover {
+                        background: #ffffff;
+                        border: 1px solid #fcd8cb;
+                    }
                 }
             }
         }
