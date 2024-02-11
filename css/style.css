@@ -285,7 +285,7 @@ h1 {
   display: flex;
   position: relative;
   height: 833px;
-  background: url(../../images/home/first-bg.png);
+  background: url(./../../images/home/first-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top; }
