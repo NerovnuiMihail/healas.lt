@@ -7,7 +7,7 @@
     display: flex;
 
     &::after {
-        content: url(../../images/aboutvr/vr-game.png);
+        content: url(./../images/aboutvr/vr-game.png);
         position: absolute;
         right: 0px;
         top: -207px;
@@ -20,7 +20,7 @@
         margin-left: 82px;
 
         &::after {
-            content: url(../../images/aboutvr/bg-img.png);
+            content: url(./../images/aboutvr/bg-img.png);
             position: absolute;
             top: -50px;
             left: -85px;
@@ -36,7 +36,7 @@
         margin-left: 76px;
 
         &::before {
-            content: url(../../images/aboutvr/VR.png);
+            content: url(./../images/aboutvr/VR.png);
             position: absolute;
             bottom: 0px;
             right: 23px;
@@ -58,7 +58,7 @@
             position: relative;
 
             &::after {
-                content: url(../../images/aboutvr/smoke-1.png);
+                content: url(./../images/aboutvr/smoke-1.png);
                 position: absolute;
                 z-index: -1;
                 top: -370px;
@@ -73,7 +73,7 @@
             position: relative;
 
             &::after {
-                content: url(../../images/aboutvr/arrow.png);
+                content: url(./../images/aboutvr/arrow.png);
                 position: absolute;
                 top: -18px;
                 right: -98px;
